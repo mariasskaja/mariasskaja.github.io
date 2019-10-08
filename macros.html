@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>макрос</h1>
+  <br>
+  <p>Макросы - это записанная последовательность команд, которую затем выполняет Excel. У меня есть три макроса: 1)макрос написания, 2)макрос замены текста, 3)макрос замены шрифта.</p>
+  <br>
+  <p>1)макрос написания:</p>
+  <p>Sub сайт()</p>
+  ' '
+  <p>сайт Макрос</p>
+  ' '
+  <p>Сочетание клавиш: Ctrl+й</p>
+  '
+  <p>ActiveCell.FormulaR1C1 = "akademia-excel.ru"</p>
+  <p>Range("A2").Select</p>
+  <p>End Sub</p>
+  <br>
+  <p>Такой макрос может вставить нужное мне слово/фразу (в данном случае название сайта) в пустую строку. Создаем макрос, добавляем сочетание клавиш для быстрого вызова команды, вводим слово, которое будет позже появляться в пустой строке, сохраняем макрос.
+    </p>
+  <br>
+  <p>2)макрос замены текста:</p>
+  <p>Sub замена()</p>
+  ' '
+  <p>замена Макрос</p>
+  ' '
+  <p>Сочетание клавиш: Ctrl+ц</p>
+  '
+  <p>Cells.Replace What:="akademia-excel.ru", Replacement:="school", LookAt:= _ xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _ ReplaceFormat:=False
+  </p>
+  <p>End Sub</p>
+  <br>
+  <p>Такой макрос заменяет введенное слово или фразу на другую. Для этого нужно создать сочетание клавиш, дать команду замены одного слвоа на другое, сохранить макрос.</p>
+  <br>
+  <p>3)макрос замены шрифта</p>
+  <p>Sub заменашрифта()</p>
+  ' '
+  <p>заменашрифта Макрос</p>
+  ' '
+  <p>Сочетание клавиш: Ctrl+у</p>
+  '
+  <p>Cells.Select</p>
+  <p>Range("J3").Activate</p>
+  <p>With Selection.Font</p>
+  <p>.Name = "Berlin Sans FB"</p>
+  <p>.Size = 11</p>
+  <p>.Strikethrough = False</p>
+  <p>.Superscript = False</p>
+  <p>.Subscript = False</p>
+  <p>.OutlineFont = False</p>
+  <p>.Shadow = False</p>
+  <p>.ThemeColor = xlThemeColorLight1</p>
+  <p>.TintAndShade = 0</p>
+  <p>.ThemeFont = xlThemeFontNone</p>
+  <p>End With</p>
+  <p>Selection.Font.Italic = True</p>
+  <p>End Sub</p>
+  <br>
+  <p>Этот макрос заменяет шрифт слова. Для него также нужно создать новый макрос, сочетание клавиш, команду замену шрифта и сохранить.</p>
+
+
+
+
+
+</body>
+
+</html>
