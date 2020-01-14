@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  <head>    
+  <link rel="stylesheet" href="style.css">
+    <script>
+    </head>
+
+    <head> 
+    function er() {
+    var i = 20;
+    while (i<36) {
+    document.getElementbyId("inf1").innerHTML = document.getElementById("inf1").innerHTML + i + "<br>"
+    </script>
+    </head>
+
+
+
+  <body>
+    <button onclick="er()">1.15</button>
+    <div id="inf1"></div>
+  </body>
+
+</html>
