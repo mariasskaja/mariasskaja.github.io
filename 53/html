@@ -80,7 +80,6 @@ i++;
 <input type="text" value="11" id="var_in2">
 
 <br>
-</div>
 
 <input type="text" value="15" id="var_in3">
 <div id="inf4"></div>
