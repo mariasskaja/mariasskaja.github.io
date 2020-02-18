@@ -143,8 +143,8 @@ document.getElementById(temp3).appendChild(z2);
 </head>
 
 <body>
-<button onclick="er()">Нажми на меня5.4a</button>
-<button onclick="er1()">Нажми на меня5.4b</button>
+<button onclick="er()">Нажми на меня (a)</button>
+<button onclick="er1()">Нажми на меня (б)</button>
 <button onclick="Clean()">Стереть таблицу</button>
 <br>
 <br> А)
